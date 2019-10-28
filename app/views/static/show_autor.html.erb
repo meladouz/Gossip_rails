@@ -1,0 +1,15 @@
+<br/> <br/>
+<center>
+<% n = params['autor'].to_i %>
+
+<h1>Page de l'auteur N° <%= n %> </h1>
+<br/> <br/>
+
+<div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+  <div class="card-header">Informations sur l'auteur </div>
+  <div class="card-body">
+    <h5 class="card-title">  <strong>Nom complet :</strong> <%= @users[n-1].first_name%> <%= @users[n-1].name %></h5>
+    <p class="card-text">  <strong>Age - </strong>  <%=@users[n-1].age %> ans<br />
+      <strong>Mail - </strong>  <%= @users[n-1].email %><br /></p>
+  </div>
+</div>

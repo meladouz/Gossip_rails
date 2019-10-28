@@ -1,0 +1,18 @@
+ <br/> <br/>
+<center>
+<h1>Bienvenure sur la page du Gossip project !</h1>
+<h2>Voici la liste des potins dans la base : </h2>
+ <br/> <br/>
+  <div class="card-columns" style = "display-flex">
+    <% @gossips.each_with_index do |gossips, index| %>
+    <div class="card border-light mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Gossip n°<%=index %></h5>
+        <p class="card-text"><a href="/static/gossip/<%= index%>"><%= gossips.title %></a></p>
+        <p class="card-text"><small class="text-muted"><%= gossips.user.first_name %></small></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+</center>
