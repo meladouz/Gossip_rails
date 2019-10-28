@@ -1,6 +1,7 @@
 # README
 <br />
-Réalisé par Marine El Adouzi &co. <br />
+Réalisé par Marine El Adouzi &co. 
+<br />
 
 * Ruby version = 2.5.1
 <br />
